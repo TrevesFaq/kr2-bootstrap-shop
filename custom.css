@@ -5,3 +5,33 @@ body {
 .placeholder-box {
   min-height: 240px;
 }
+
+.placeholder-image {
+  min-height: 320px;
+}
+
+.card-img-top {
+  height: 180px;
+  object-fit: cover;
+}
+
+/* Самостоятельные доработки */
+
+.card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .card {
+    transition: none;
+  }
+
+  .card:hover {
+    transform: none;
+  }
+}
