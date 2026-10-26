@@ -3,17 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Товар — Bootstrap Shop</title>
+  <title>Товар — Retro Shelf</title>
   <link
     href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
     rel="stylesheet"
   >
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/custom.css">
 </head>
-<body class="bg-light">
+<body>
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
-      <a class="navbar-brand" href="index.html">Bootstrap Shop</a>
+      <a class="navbar-brand font-pixel" href="index.html">Retro Shelf</a>
       <button
         class="navbar-toggler"
         type="button"
@@ -64,62 +67,677 @@
   </nav>
 
   <main class="container my-5">
-    <nav aria-label="breadcrumb">
-      <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
-        <li class="breadcrumb-item"><a href="catalog.html">Каталог</a></li>
-        <li class="breadcrumb-item active" aria-current="page">Товар 1</li>
-      </ol>
-    </nav>
-    <div class="row g-4">
-      <div class="col-12 col-lg-6">
-        <div class="card shadow-sm">
-          <div class="placeholder-image bg-light border rounded d-flex align-items-center justify-content-center">
-            <span class="text-muted">Изображение товара</span>
+    <div id="products">
+    <section class="product-view" id="mega-drive-2">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+          <li class="breadcrumb-item"><a href="catalog.html">Каталог</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Sega Mega Drive 2</li>
+        </ol>
+      </nav>
+      <div class="row g-4">
+        <div class="col-12 col-lg-6">
+          <img src="images/segamd2.jpeg" class="img-fluid rounded border w-100" alt="Sega Mega Drive 2">
+        </div>
+        <div class="col-12 col-lg-6">
+          <span class="badge bg-success mb-3">Новинка</span>
+        <h1 class="h2">Sega Mega Drive 2</h1>
+          <p class="lead text-muted">
+            Компактная ревизия Mega Drive 1993 года. Проверена, очищена, выдаёт чистую картинку по AV. В комплекте блок питания и один геймпад.
+          </p>
+          <p class="fs-3 fw-bold">6&nbsp;500 руб.</p>
+          <div class="d-flex flex-wrap gap-2 mb-4">
+            <a class="btn btn-primary btn-lg" href="order.html">
+              Оформить заявку
+            </a>
+            <a class="btn btn-outline-secondary btn-lg" href="catalog.html">
+              Назад в каталог
+            </a>
           </div>
         </div>
       </div>
-      <div class="col-12 col-lg-6">
-        <span class="badge bg-success mb-3">Новинка</span>
-        <h1 class="h2">Товар 1</h1>
-        <p class="lead text-muted">
-          Подробное описание учебного товара для страницы карточки.
-        </p>
-        <p class="fs-3 fw-bold">1000 руб.</p>
-        <div class="d-flex gap-2 mb-4">
-          <a class="btn btn-primary btn-lg" href="order.html">
-            Оформить заявку
-          </a>
-          <a class="btn btn-outline-secondary btn-lg" href="catalog.html">
-            Назад в каталог
-          </a>
-        </div>
-        <div class="alert alert-warning" role="alert">
-          Это учебная карточка товара. Данные используются для демонстрации Bootstrap-компонентов.
-        </div>
-      </div>
-    </div>
-    <section class="mt-5">
-      <h2 class="h4 mb-3">Характеристики</h2>
+      <h2 class="h4 mt-5 mb-3">Характеристики</h2>
       <div class="table-responsive">
-        <table class="table table-striped table-bordered align-middle">
+        <table class="table table-striped table-bordered align-middle bg-white">
           <tbody>
             <tr>
               <th scope="row">Категория</th>
-              <td>Учебные товары</td>
+              <td>Консоли</td>
             </tr>
             <tr>
-              <th scope="row">Цена</th>
-              <td>1000 руб.</td>
+              <th scope="row">Платформа</th>
+              <td>Sega Mega Drive / Genesis</td>
+            </tr>
+            <tr>
+              <th scope="row">Разрядность</th>
+              <td>16 бит</td>
+            </tr>
+            <tr>
+              <th scope="row">Состояние</th>
+              <td>Проверена, рабочая</td>
             </tr>
             <tr>
               <th scope="row">Наличие</th>
               <td>В наличии</td>
             </tr>
+            <tr>
+              <th scope="row">Цена</th>
+              <td>6&nbsp;500 руб.</td>
+            </tr>
           </tbody>
         </table>
       </div>
     </section>
+    <section class="product-view" id="snes">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+          <li class="breadcrumb-item"><a href="catalog.html">Каталог</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Super Nintendo (SNES)</li>
+        </ol>
+      </nav>
+      <div class="row g-4">
+        <div class="col-12 col-lg-6">
+          <img src="images/supernin.jpg" class="img-fluid rounded border w-100" alt="Super Nintendo (SNES)">
+        </div>
+        <div class="col-12 col-lg-6">
+          <span class="badge bg-primary mb-3">Выбор покупателей</span>
+        <h1 class="h2">Super Nintendo (SNES)</h1>
+          <p class="lead text-muted">
+            Оригинальная Super Nintendo, регион PAL. Корпус без сильных потёртостей, кнопки и слот картриджа проверены. Работает через композитный AV-выход.
+          </p>
+          <p class="fs-3 fw-bold">12&nbsp;900 руб.</p>
+          <div class="d-flex flex-wrap gap-2 mb-4">
+            <a class="btn btn-primary btn-lg" href="order.html">
+              Оформить заявку
+            </a>
+            <a class="btn btn-outline-secondary btn-lg" href="catalog.html">
+              Назад в каталог
+            </a>
+          </div>
+        </div>
+      </div>
+      <h2 class="h4 mt-5 mb-3">Характеристики</h2>
+      <div class="table-responsive">
+        <table class="table table-striped table-bordered align-middle bg-white">
+          <tbody>
+            <tr>
+              <th scope="row">Категория</th>
+              <td>Консоли</td>
+            </tr>
+            <tr>
+              <th scope="row">Платформа</th>
+              <td>Nintendo SNES</td>
+            </tr>
+            <tr>
+              <th scope="row">Разрядность</th>
+              <td>16 бит</td>
+            </tr>
+            <tr>
+              <th scope="row">Регион</th>
+              <td>PAL</td>
+            </tr>
+            <tr>
+              <th scope="row">Наличие</th>
+              <td>Под заказ</td>
+            </tr>
+            <tr>
+              <th scope="row">Цена</th>
+              <td>12&nbsp;900 руб.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+    <section class="product-view" id="ps1">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+          <li class="breadcrumb-item"><a href="catalog.html">Каталог</a></li>
+          <li class="breadcrumb-item active" aria-current="page">PlayStation 1</li>
+        </ol>
+      </nav>
+      <div class="row g-4">
+        <div class="col-12 col-lg-6">
+          <img src="images/ps1.jpeg" class="img-fluid rounded border w-100" alt="PlayStation 1">
+        </div>
+        <div class="col-12 col-lg-6">
+          <h1 class="h2">PlayStation 1</h1>
+          <p class="lead text-muted">
+            Консоль PlayStation 1 в рабочем состоянии. Привод проверен на нескольких дисках, в комплекте блок питания, AV-кабель и геймпад.
+          </p>
+          <p class="fs-3 fw-bold">5&nbsp;900 руб.</p>
+          <div class="d-flex flex-wrap gap-2 mb-4">
+            <a class="btn btn-primary btn-lg" href="order.html">
+              Оформить заявку
+            </a>
+            <a class="btn btn-outline-secondary btn-lg" href="catalog.html">
+              Назад в каталог
+            </a>
+          </div>
+        </div>
+      </div>
+      <h2 class="h4 mt-5 mb-3">Характеристики</h2>
+      <div class="table-responsive">
+        <table class="table table-striped table-bordered align-middle bg-white">
+          <tbody>
+            <tr>
+              <th scope="row">Категория</th>
+              <td>Консоли</td>
+            </tr>
+            <tr>
+              <th scope="row">Платформа</th>
+              <td>Sony PlayStation 1</td>
+            </tr>
+            <tr>
+              <th scope="row">Носитель</th>
+              <td>CD</td>
+            </tr>
+            <tr>
+              <th scope="row">Состояние</th>
+              <td>Проверена, рабочая</td>
+            </tr>
+            <tr>
+              <th scope="row">Наличие</th>
+              <td>В наличии</td>
+            </tr>
+            <tr>
+              <th scope="row">Цена</th>
+              <td>5&nbsp;900 руб.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+    <section class="product-view" id="ps2">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+          <li class="breadcrumb-item"><a href="catalog.html">Каталог</a></li>
+          <li class="breadcrumb-item active" aria-current="page">PlayStation 2</li>
+        </ol>
+      </nav>
+      <div class="row g-4">
+        <div class="col-12 col-lg-6">
+        <img src="images/ps2.jpg" class="img-fluid rounded border w-100" alt="PlayStation 2">
+        </div>
+        <div class="col-12 col-lg-6">
+          <span class="badge bg-warning text-dark mb-3">Хит</span>
+        <h1 class="h2">PlayStation 2</h1>
+          <p class="lead text-muted">
+            PlayStation 2 с проверенным приводом, читает диски PS2 и PS1. В комплекте блок питания, AV-кабель и геймпад.
+          </p>
+          <p class="fs-3 fw-bold">7&nbsp;500 руб.</p>
+          <div class="d-flex flex-wrap gap-2 mb-4">
+            <a class="btn btn-primary btn-lg" href="order.html">
+              Оформить заявку
+            </a>
+            <a class="btn btn-outline-secondary btn-lg" href="catalog.html">
+              Назад в каталог
+            </a>
+          </div>
+        </div>
+      </div>
+      <h2 class="h4 mt-5 mb-3">Характеристики</h2>
+      <div class="table-responsive">
+        <table class="table table-striped table-bordered align-middle bg-white">
+          <tbody>
+            <tr>
+              <th scope="row">Категория</th>
+              <td>Консоли</td>
+            </tr>
+            <tr>
+              <th scope="row">Платформа</th>
+              <td>Sony PlayStation 2</td>
+            </tr>
+            <tr>
+              <th scope="row">Носитель</th>
+              <td>DVD и CD</td>
+            </tr>
+            <tr>
+              <th scope="row">Состояние</th>
+              <td>Проверена, рабочая</td>
+            </tr>
+            <tr>
+              <th scope="row">Наличие</th>
+              <td>В наличии</td>
+            </tr>
+            <tr>
+              <th scope="row">Цена</th>
+              <td>7&nbsp;500 руб.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+    <section class="product-view" id="psp">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+          <li class="breadcrumb-item"><a href="catalog.html">Каталог</a></li>
+          <li class="breadcrumb-item active" aria-current="page">PlayStation Portable (PSP)</li>
+        </ol>
+      </nav>
+      <div class="row g-4">
+        <div class="col-12 col-lg-6">
+          <img src="images/psp.jpeg" class="img-fluid rounded border w-100" alt="PlayStation Portable (PSP)">
+        </div>
+        <div class="col-12 col-lg-6">
+          <span class="badge bg-success mb-3">Новинка</span>
+        <h1 class="h2">PlayStation Portable (PSP)</h1>
+          <p class="lead text-muted">
+            PSP с исправным экраном и кнопками, аккумулятор держит заряд. В комплекте зарядное устройство.
+          </p>
+          <p class="fs-3 fw-bold">6&nbsp;900 руб.</p>
+          <div class="d-flex flex-wrap gap-2 mb-4">
+            <a class="btn btn-primary btn-lg" href="order.html">
+              Оформить заявку
+            </a>
+            <a class="btn btn-outline-secondary btn-lg" href="catalog.html">
+              Назад в каталог
+            </a>
+          </div>
+        </div>
+      </div>
+      <h2 class="h4 mt-5 mb-3">Характеристики</h2>
+      <div class="table-responsive">
+        <table class="table table-striped table-bordered align-middle bg-white">
+          <tbody>
+            <tr>
+              <th scope="row">Категория</th>
+              <td>Консоли</td>
+            </tr>
+            <tr>
+              <th scope="row">Платформа</th>
+              <td>Sony PSP</td>
+            </tr>
+            <tr>
+              <th scope="row">Носитель</th>
+              <td>UMD</td>
+            </tr>
+            <tr>
+              <th scope="row">Состояние</th>
+              <td>Проверена, рабочая</td>
+            </tr>
+            <tr>
+              <th scope="row">Наличие</th>
+              <td>В наличии</td>
+            </tr>
+            <tr>
+              <th scope="row">Цена</th>
+              <td>6&nbsp;900 руб.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+    <section class="product-view" id="ps-vita">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+          <li class="breadcrumb-item"><a href="catalog.html">Каталог</a></li>
+          <li class="breadcrumb-item active" aria-current="page">PlayStation Vita</li>
+        </ol>
+      </nav>
+      <div class="row g-4">
+        <div class="col-12 col-lg-6">
+          <img src="images/psvita.jpeg" class="img-fluid rounded border w-100" alt="PlayStation Vita">
+        </div>
+        <div class="col-12 col-lg-6">
+          <span class="badge bg-primary mb-3">Выбор покупателей</span>
+        <h1 class="h2">PlayStation Vita</h1>
+          <p class="lead text-muted">
+            PlayStation Vita с исправным экраном, стиками и сенсорной панелью. Аккумулятор держит заряд, в комплекте зарядное устройство.
+          </p>
+          <p class="fs-3 fw-bold">11&nbsp;900 руб.</p>
+          <div class="d-flex flex-wrap gap-2 mb-4">
+            <a class="btn btn-primary btn-lg" href="order.html">
+              Оформить заявку
+            </a>
+            <a class="btn btn-outline-secondary btn-lg" href="catalog.html">
+              Назад в каталог
+            </a>
+          </div>
+        </div>
+      </div>
+      <h2 class="h4 mt-5 mb-3">Характеристики</h2>
+      <div class="table-responsive">
+        <table class="table table-striped table-bordered align-middle bg-white">
+          <tbody>
+            <tr>
+              <th scope="row">Категория</th>
+              <td>Консоли</td>
+            </tr>
+            <tr>
+              <th scope="row">Платформа</th>
+              <td>Sony PlayStation Vita</td>
+            </tr>
+            <tr>
+              <th scope="row">Экран</th>
+              <td>5 дюймов, сенсорный</td>
+            </tr>
+            <tr>
+              <th scope="row">Состояние</th>
+              <td>Проверена, рабочая</td>
+            </tr>
+            <tr>
+              <th scope="row">Наличие</th>
+              <td>Под заказ</td>
+            </tr>
+            <tr>
+              <th scope="row">Цена</th>
+              <td>11&nbsp;900 руб.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+    <section class="product-view" id="nintendo-3ds">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+          <li class="breadcrumb-item"><a href="catalog.html">Каталог</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Nintendo 3DS</li>
+        </ol>
+      </nav>
+      <div class="row g-4">
+        <div class="col-12 col-lg-6">
+          <img src="images/3ds.jpeg" class="img-fluid rounded border w-100" alt="Nintendo 3DS">
+        </div>
+        <div class="col-12 col-lg-6">
+          <span class="badge bg-danger mb-3">Скидка</span>
+        <h1 class="h2">Nintendo 3DS</h1>
+          <p class="lead text-muted">
+            Nintendo 3DS с рабочим 3D-эффектом, обоими экранами и кнопками. В комплекте зарядное устройство и стилус.
+          </p>
+          <p class="fs-3 fw-bold"><s class="text-muted fs-5 fw-normal">12&nbsp;500 руб.</s> 10&nbsp;500 руб.</p>
+          <div class="d-flex flex-wrap gap-2 mb-4">
+            <a class="btn btn-primary btn-lg" href="order.html">
+              Оформить заявку
+            </a>
+            <a class="btn btn-outline-secondary btn-lg" href="catalog.html">
+              Назад в каталог
+            </a>
+          </div>
+        </div>
+      </div>
+      <h2 class="h4 mt-5 mb-3">Характеристики</h2>
+      <div class="table-responsive">
+        <table class="table table-striped table-bordered align-middle bg-white">
+          <tbody>
+            <tr>
+              <th scope="row">Категория</th>
+              <td>Консоли</td>
+            </tr>
+            <tr>
+              <th scope="row">Платформа</th>
+              <td>Nintendo 3DS</td>
+            </tr>
+            <tr>
+              <th scope="row">Экраны</th>
+              <td>Два, верхний с 3D</td>
+            </tr>
+            <tr>
+              <th scope="row">Состояние</th>
+              <td>Проверена, рабочая</td>
+            </tr>
+            <tr>
+              <th scope="row">Наличие</th>
+              <td>В наличии</td>
+            </tr>
+            <tr>
+              <th scope="row">Цена</th>
+              <td>10&nbsp;500 руб.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+    <section class="product-view" id="ps1-laser">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+          <li class="breadcrumb-item"><a href="catalog.html">Каталог</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Лазер для PS1</li>
+        </ol>
+      </nav>
+      <div class="row g-4">
+        <div class="col-12 col-lg-6">
+          <img src="images/laser.jpeg" class="img-fluid rounded border w-100" alt="Лазер для PS1">
+        </div>
+        <div class="col-12 col-lg-6">
+          <h1 class="h2">Лазер для PS1</h1>
+          <p class="lead text-muted">
+            Новый лазер для ремонта PlayStation 1. Перед покупкой уточните модель вашей консоли: у разных ревизий лазеры отличаются.
+          </p>
+          <p class="fs-3 fw-bold">1&nbsp;800 руб.</p>
+          <div class="d-flex flex-wrap gap-2 mb-4">
+            <a class="btn btn-primary btn-lg" href="order.html">
+              Оформить заявку
+            </a>
+            <a class="btn btn-outline-secondary btn-lg" href="catalog.html">
+              Назад в каталог
+            </a>
+          </div>
+        </div>
+      </div>
+      <h2 class="h4 mt-5 mb-3">Характеристики</h2>
+      <div class="table-responsive">
+        <table class="table table-striped table-bordered align-middle bg-white">
+          <tbody>
+            <tr>
+              <th scope="row">Категория</th>
+              <td>Комплектующие</td>
+            </tr>
+            <tr>
+              <th scope="row">Совместимость</th>
+              <td>PlayStation 1</td>
+            </tr>
+            <tr>
+              <th scope="row">Состояние</th>
+              <td>Новая</td>
+            </tr>
+            <tr>
+              <th scope="row">Установка</th>
+              <td>Нужна пайка и калибровка</td>
+            </tr>
+            <tr>
+              <th scope="row">Наличие</th>
+              <td>В наличии</td>
+            </tr>
+            <tr>
+              <th scope="row">Цена</th>
+              <td>1&nbsp;800 руб.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+    <section class="product-view" id="psu-9v">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+          <li class="breadcrumb-item"><a href="catalog.html">Каталог</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Блок питания 9V</li>
+        </ol>
+      </nav>
+      <div class="row g-4">
+        <div class="col-12 col-lg-6">
+          <img src="images/9v.jpeg" class="img-fluid rounded border w-100" alt="Блок питания 9V">
+        </div>
+        <div class="col-12 col-lg-6">
+          <span class="badge bg-warning text-dark mb-3">Хит</span>
+        <h1 class="h2">Блок питания 9V</h1>
+          <p class="lead text-muted">
+            Стабилизированный блок питания 9 В с переходниками. Подходит для Mega Drive и SNES. Перед подключением проверьте полярность штекера.
+          </p>
+          <p class="fs-3 fw-bold">1&nbsp;200 руб.</p>
+          <div class="d-flex flex-wrap gap-2 mb-4">
+            <a class="btn btn-primary btn-lg" href="order.html">
+              Оформить заявку
+            </a>
+            <a class="btn btn-outline-secondary btn-lg" href="catalog.html">
+              Назад в каталог
+            </a>
+          </div>
+        </div>
+      </div>
+      <h2 class="h4 mt-5 mb-3">Характеристики</h2>
+      <div class="table-responsive">
+        <table class="table table-striped table-bordered align-middle bg-white">
+          <tbody>
+            <tr>
+              <th scope="row">Категория</th>
+              <td>Комплектующие</td>
+            </tr>
+            <tr>
+              <th scope="row">Напряжение</th>
+              <td>9 В</td>
+            </tr>
+            <tr>
+              <th scope="row">Совместимость</th>
+              <td>Mega Drive, SNES</td>
+            </tr>
+            <tr>
+              <th scope="row">Состояние</th>
+              <td>Новый</td>
+            </tr>
+            <tr>
+              <th scope="row">Наличие</th>
+              <td>В наличии</td>
+            </tr>
+            <tr>
+              <th scope="row">Цена</th>
+              <td>1&nbsp;200 руб.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+    <section class="product-view" id="ps1-memory-card">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+          <li class="breadcrumb-item"><a href="catalog.html">Каталог</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Карта памяти для PS1</li>
+        </ol>
+      </nav>
+      <div class="row g-4">
+        <div class="col-12 col-lg-6">
+          <img src="images/storage.jpeg" class="img-fluid rounded border w-100" alt="Карта памяти для PS1">
+        </div>
+        <div class="col-12 col-lg-6">
+          <span class="badge bg-danger mb-3">Скидка</span>
+        <h1 class="h2">Карта памяти для PS1</h1>
+          <p class="lead text-muted">
+            Карта памяти для PlayStation 1 на 15 блоков, хватит на несколько десятков часов игры. Проверена на запись и чтение.
+          </p>
+          <p class="fs-3 fw-bold"><s class="text-muted fs-5 fw-normal">1&nbsp;200 руб.</s> 900&nbsp;руб.</p>
+          <div class="d-flex flex-wrap gap-2 mb-4">
+            <a class="btn btn-primary btn-lg" href="order.html">
+              Оформить заявку
+            </a>
+            <a class="btn btn-outline-secondary btn-lg" href="catalog.html">
+              Назад в каталог
+            </a>
+          </div>
+        </div>
+      </div>
+      <h2 class="h4 mt-5 mb-3">Характеристики</h2>
+      <div class="table-responsive">
+        <table class="table table-striped table-bordered align-middle bg-white">
+          <tbody>
+            <tr>
+              <th scope="row">Категория</th>
+              <td>Аксессуары</td>
+            </tr>
+            <tr>
+              <th scope="row">Платформа</th>
+              <td>PlayStation 1</td>
+            </tr>
+            <tr>
+              <th scope="row">Объём</th>
+              <td>15 блоков</td>
+            </tr>
+            <tr>
+              <th scope="row">Состояние</th>
+              <td>Проверена</td>
+            </tr>
+            <tr>
+              <th scope="row">Наличие</th>
+              <td>В наличии</td>
+            </tr>
+            <tr>
+              <th scope="row">Цена</th>
+              <td>900&nbsp;руб.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+    <section class="product-view" id="md-pad">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+          <li class="breadcrumb-item"><a href="catalog.html">Каталог</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Геймпад 6 кнопок для Mega Drive</li>
+        </ol>
+      </nav>
+      <div class="row g-4">
+        <div class="col-12 col-lg-6">
+          <img src="images/gamepad.jpeg" class="img-fluid rounded border w-100" alt="Геймпад 6 кнопок для Mega Drive">
+        </div>
+        <div class="col-12 col-lg-6">
+          <h1 class="h2">Геймпад 6 кнопок для Mega Drive</h1>
+          <p class="lead text-muted">
+            Шестикнопочный геймпад в стиле оригинального контроллера Mega Drive. Кнопки и крестовина проверены, шнур без перегибов.
+          </p>
+          <p class="fs-3 fw-bold">1&nbsp;500 руб.</p>
+          <div class="d-flex flex-wrap gap-2 mb-4">
+            <a class="btn btn-primary btn-lg" href="order.html">
+              Оформить заявку
+            </a>
+            <a class="btn btn-outline-secondary btn-lg" href="catalog.html">
+              Назад в каталог
+            </a>
+          </div>
+        </div>
+      </div>
+      <h2 class="h4 mt-5 mb-3">Характеристики</h2>
+      <div class="table-responsive">
+        <table class="table table-striped table-bordered align-middle bg-white">
+          <tbody>
+            <tr>
+              <th scope="row">Категория</th>
+              <td>Аксессуары</td>
+            </tr>
+            <tr>
+              <th scope="row">Платформа</th>
+              <td>Sega Mega Drive / Genesis</td>
+            </tr>
+            <tr>
+              <th scope="row">Кнопки</th>
+              <td>6 + Start</td>
+            </tr>
+            <tr>
+              <th scope="row">Состояние</th>
+              <td>Проверен</td>
+            </tr>
+            <tr>
+              <th scope="row">Наличие</th>
+              <td>В наличии</td>
+            </tr>
+            <tr>
+              <th scope="row">Цена</th>
+              <td>1&nbsp;500 руб.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+    </div>
+
     <section class="mt-5">
       <ul class="nav nav-tabs" id="productTabs" role="tablist">
         <li class="nav-item" role="presentation">
@@ -153,10 +771,10 @@
       </ul>
       <div class="tab-content border border-top-0 rounded-bottom bg-white p-4">
         <div class="tab-pane fade show active" id="tab-delivery" role="tabpanel" aria-labelledby="tab-delivery-btn" tabindex="0">
-          Условия доставки уточняются менеджером после отправки заявки.
+          Условия доставки уточняются менеджером после отправки заявки. Консоли упаковываем так, чтобы они доехали целыми.
         </div>
         <div class="tab-pane fade" id="tab-warranty" role="tabpanel" aria-labelledby="tab-warranty-btn" tabindex="0">
-          На учебный товар распространяется учебная гарантия, это демонстрация компонента tabs.
+          На проверенную технику распространяется гарантия 14 дней: если найдётся неисправность, заменим или вернём деньги.
         </div>
       </div>
     </section>
@@ -184,7 +802,7 @@
           data-bs-parent="#faqAccordion"
         >
           <div class="accordion-body">
-            Да, в учебном проекте заявка оформляется без регистрации.
+            Да, заявка оформляется без регистрации: достаточно имени и контакта.
           </div>
         </div>
       </div>
@@ -198,7 +816,7 @@
             aria-expanded="false"
             aria-controls="faqTwo"
           >
-            Где используется Bootstrap?
+            Как понять, что деталь подойдёт к моей консоли?
           </button>
         </h3>
         <div
@@ -207,7 +825,7 @@
           data-bs-parent="#faqAccordion"
         >
           <div class="accordion-body">
-            Bootstrap используется для сетки, карточек, форм, навигации, сообщений и модальных окон.
+            В характеристиках каждого товара указана совместимость. Если сомневаетесь, напишите модель консоли в комментарии к заявке.
           </div>
         </div>
       </div>
@@ -219,7 +837,7 @@
       <div class="row align-items-center g-3">
         <div class="col-12 col-md-6">
           <p class="mb-0">
-            &copy; 2026 Bootstrap Shop. Учебный проект.
+            &copy; 2026 Retro Shelf. Магазин ретрогейминга. Учебный проект.
           </p>
         </div>
         <div class="col-12 col-md-6 text-md-end">
