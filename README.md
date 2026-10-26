@@ -10,7 +10,7 @@
 
 ## Ссылка на опубликованную версию
 
-GitHub Pages: https://username.github.io/kr2-bootstrap-shop/
+GitHub Pages: https://TrevesFaq.github.io/kr2-bootstrap-shop/
 
 ## Используемый фреймворк
 
