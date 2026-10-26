@@ -1,5 +1,75 @@
+/* Палитра: корпус SNES, индиго CRT-экрана, красный как кнопка NES */
+:root {
+  --bs-primary: #c8372d;
+  --bs-primary-rgb: 200, 55, 45;
+  --bs-dark: #25203a;
+  --bs-dark-rgb: 37, 32, 58;
+  --bs-light-rgb: 230, 225, 211;
+  --bs-link-color: #a82c24;
+  --bs-link-color-rgb: 168, 44, 36;
+  --bs-link-hover-color: #8a231d;
+  --bs-link-hover-color-rgb: 138, 35, 29;
+}
+
 body {
   min-height: 100vh;
+  background-color: #ece8dc;
+}
+
+.btn-primary {
+  --bs-btn-bg: #c8372d;
+  --bs-btn-border-color: #c8372d;
+  --bs-btn-hover-bg: #a82c24;
+  --bs-btn-hover-border-color: #a82c24;
+  --bs-btn-active-bg: #8a231d;
+  --bs-btn-active-border-color: #8a231d;
+  --bs-btn-disabled-bg: #c8372d;
+  --bs-btn-disabled-border-color: #c8372d;
+}
+
+.btn-outline-primary {
+  --bs-btn-color: #a82c24;
+  --bs-btn-border-color: #c8372d;
+  --bs-btn-hover-bg: #c8372d;
+  --bs-btn-hover-border-color: #c8372d;
+  --bs-btn-active-bg: #a82c24;
+  --bs-btn-active-border-color: #a82c24;
+}
+
+.nav-tabs .nav-link {
+  color: #a82c24;
+}
+
+.nav-tabs .nav-link.active {
+  color: #25203a;
+}
+
+.font-pixel {
+  font-family: "Press Start 2P", "Courier New", monospace;
+  line-height: 1.6;
+  letter-spacing: 0;
+}
+
+.navbar-brand.font-pixel {
+  font-size: 0.85rem;
+}
+
+h1.font-pixel {
+  font-size: 1.1rem;
+}
+
+.hero-title {
+  font-size: clamp(1.1rem, 2.6vw, 1.7rem);
+  line-height: 1.7;
+}
+
+/* Заглушка под фото: клетчатый фон, заменяется на <img> */
+.product-photo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #6b6558;
+  background: conic-gradient(#d8d2c0 25%, #e6e1d3 0 50%, #d8d2c0 0 75%, #e6e1d3 0) 0 0 / 24px 24px;
 }
 
 .placeholder-box {
@@ -13,4 +83,37 @@ body {
 .card-img-top {
   height: 180px;
   object-fit: cover;
+}
+
+.product-view {
+  display: none;
+}
+
+.product-view:target {
+  display: block;
+}
+
+#products:not(:has(.product-view:target)) > .product-view:first-child {
+  display: block;
+}
+
+/* Самостоятельные доработки */
+
+.card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .card {
+    transition: none;
+  }
+
+  .card:hover {
+    transform: none;
+  }
 }

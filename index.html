@@ -3,11 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Главная — Bootstrap Shop</title>
+  <title>Главная — Retro Shelf</title>
   <link
     href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
     rel="stylesheet"
   >
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/custom.css">
 </head>
 <body>
@@ -15,9 +18,9 @@
     <div class="container">
       <div class="row align-items-center">
         <div class="col-12 col-md-8">
-          <h1 class="h3 mb-1">Bootstrap Shop</h1>
+          <h1 class="h3 mb-1 font-pixel">Retro Shelf</h1>
           <p class="mb-0 opacity-75">
-            Учебный интернет-магазин на Bootstrap
+            Магазин ретрогейминга: консоли, комплектующие и аксессуары
           </p>
         </div>
         <div class="col-12 col-md-4 text-md-end mt-3 mt-md-0">
@@ -31,7 +34,7 @@
 
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
-      <a class="navbar-brand" href="index.html">Bootstrap Shop</a>
+      <a class="navbar-brand font-pixel" href="index.html">Retro Shelf</a>
       <button
         class="navbar-toggler"
         type="button"
@@ -85,51 +88,44 @@
     <section class="container my-5">
       <div class="row align-items-center g-4">
         <div class="col-12 col-lg-6">
-          <h2 class="display-5 fw-bold">
-            Учебный каталог товаров на Bootstrap
+          <h2 class="display-5 fw-bold font-pixel hero-title">
+            Играйте в игры, на которых вы выросли
           </h2>
           <p class="lead text-muted">
-            Проект демонстрирует использование Bootstrap-сетки,
-            адаптивных колонок и базовых utility-классов.
+            Проверенные консоли 8 и 16 бит, запчасти для ремонта
+            и аксессуары, чтобы всё работало как в детстве.
           </p>
           <a class="btn btn-primary btn-lg" href="catalog.html">
             Перейти в каталог
           </a>
         </div>
-        <div class="col-12 col-lg-6">
-          <div class="placeholder-box p-5 bg-light border rounded text-center">
-            <p class="mb-0 text-muted">
-              Здесь может быть изображение, баннер или промо-блок.
-            </p>
-          </div>
-        </div>
       </div>
     </section>
 
     <section class="container my-5">
-      <h2 class="text-center mb-4">Преимущества проекта</h2>
+      <h2 class="text-center mb-4">Почему у нас</h2>
       <div class="row g-4">
         <div class="col-12 col-md-4">
           <div class="p-4 border rounded h-100 bg-white">
-            <h3 class="h5">Bootstrap-сетка</h3>
+            <h3 class="h5">Проверено перед продажей</h3>
             <p class="mb-0 text-muted">
-              Страница построена на 12-колоночной системе Bootstrap.
+              Каждую консоль чистим и тестируем: картинка, звук, кнопки, слот картриджа.
             </p>
           </div>
         </div>
         <div class="col-12 col-md-4">
           <div class="p-4 border rounded h-100 bg-white">
-            <h3 class="h5">Адаптивность</h3>
+            <h3 class="h5">Всё для ремонта</h3>
             <p class="mb-0 text-muted">
-              Колонки меняют ширину в зависимости от размера экрана.
+              Блоки питания, лазерные головки и другие детали для старых консолей.
             </p>
           </div>
         </div>
         <div class="col-12 col-md-4">
           <div class="p-4 border rounded h-100 bg-white">
-            <h3 class="h5">Готовая база</h3>
+            <h3 class="h5">Подберём совместимое</h3>
             <p class="mb-0 text-muted">
-              Проект подготовлен к добавлению карточек, форм и модальных окон.
+              Напишите модель консоли, и мы подскажем подходящие геймпады и кабели.
             </p>
           </div>
         </div>
@@ -145,40 +141,43 @@
       </div>
       <div class="row g-4">
         <div class="col-12 col-md-6 col-lg-4">
-          <div class="border rounded h-100 p-4">
+          <div class="border rounded h-100 p-4 bg-white">
             <span class="badge bg-success mb-3">Новинка</span>
-            <h3 class="h5">Товар 1</h3>
+            <p class="small text-muted mb-1">Консоли</p>
+            <h3 class="h5">Sega Mega Drive 2</h3>
             <p class="text-muted">
-              Краткое описание учебного товара.
+              16-битная классика Sega: Sonic, Streets of Rage, Golden Axe.
             </p>
-            <p class="fw-bold mb-3">1000 руб.</p>
-            <a class="btn btn-primary" href="product.html">
+            <p class="fw-bold mb-3">6&nbsp;500 руб.</p>
+            <a class="btn btn-primary" href="product.html#mega-drive-2">
               Подробнее
             </a>
           </div>
         </div>
         <div class="col-12 col-md-6 col-lg-4">
-          <div class="border rounded h-100 p-4">
+          <div class="border rounded h-100 p-4 bg-white">
             <span class="badge bg-warning text-dark mb-3">Хит</span>
-            <h3 class="h5">Товар 2</h3>
+            <p class="small text-muted mb-1">Консоли</p>
+            <h3 class="h5">PlayStation 2</h3>
             <p class="text-muted">
-              Краткое описание учебного товара.
+              Самая продаваемая консоль в истории: GTA, God of War, Metal Gear Solid.
             </p>
-            <p class="fw-bold mb-3">1500 руб.</p>
-            <a class="btn btn-primary" href="product.html">
+            <p class="fw-bold mb-3">7&nbsp;500 руб.</p>
+            <a class="btn btn-primary" href="product.html#ps2">
               Подробнее
             </a>
           </div>
         </div>
         <div class="col-12 col-md-6 col-lg-4">
-          <div class="border rounded h-100 p-4">
-            <span class="badge bg-danger mb-3">Скидка</span>
-            <h3 class="h5">Товар 3</h3>
+          <div class="border rounded h-100 p-4 bg-white">
+            <span class="badge bg-warning text-dark mb-3">Хит</span>
+            <p class="small text-muted mb-1">Комплектующие</p>
+            <h3 class="h5">Блок питания 9V</h3>
             <p class="text-muted">
-              Краткое описание учебного товара.
+              Универсальный блок питания для 16-битных консолей.
             </p>
-            <p class="fw-bold mb-3">2000 руб.</p>
-            <a class="btn btn-primary" href="product.html">
+            <p class="fw-bold mb-3">1&nbsp;200 руб.</p>
+            <a class="btn btn-primary" href="product.html#psu-9v">
               Подробнее
             </a>
           </div>
@@ -192,7 +191,7 @@
       <div class="row align-items-center g-3">
         <div class="col-12 col-md-6">
           <p class="mb-0">
-            &copy; 2026 Bootstrap Shop. Учебный проект.
+            &copy; 2026 Retro Shelf. Магазин ретрогейминга. Учебный проект.
           </p>
         </div>
         <div class="col-12 col-md-6 text-md-end">
