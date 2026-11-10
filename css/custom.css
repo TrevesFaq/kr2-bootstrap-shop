@@ -117,3 +117,30 @@ h1.font-pixel {
     transform: none;
   }
 }
+
+/* Карусель Bootstrap на светлом фоне */
+.shop-carousel {
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.shop-carousel__image {
+  height: 300px;
+  object-fit: contain;
+  background-color: #fff;
+}
+
+.shop-carousel .carousel-control-prev-icon,
+.shop-carousel .carousel-control-next-icon {
+  filter: invert(1) grayscale(100%);
+}
+
+.shop-carousel .carousel-indicators [data-bs-target] {
+  background-color: #25203a;
+}
+
+@media (max-width: 575.98px) {
+  .shop-carousel__image {
+    height: 220px;
+  }
+}
